@@ -1,0 +1,94 @@
+
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-desktop"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Invent ASM</div>
+    </a>
+
+      <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'equipamento:index' %}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+      <!-- Divider -->
+    <hr class="sidebar-divider">
+
+      <!-- Heading -->
+    <div class="sidebar-heading">
+        Dispositivos
+    </div>
+
+      <!-- Computadores -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDesktop" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-desktop"></i>
+          <span>Computadores</span>
+        </a>
+        <div id="collapseDesktop" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{% url 'equipamento:desktop' %}">Desktop</a>
+                <a class="collapse-item" href="{% url 'equipamento:laptop' %}">Laptop</a>
+                <a class="collapse-item" href="{% url 'equipamento:monitor' %}">Monitor</a>
+                <a class="collapse-item" href="{% url 'equipamento:nobreak' %}">Nobreak</a>
+            </div>
+        </div>
+    </li>
+
+      <!-- Redes -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseNet" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-network-wired"></i>
+            <span>Redes</span>
+        </a>
+        <div id="collapseNet" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{% url 'equipamento:roteador' %}">Roteador</a>
+                <a class="collapse-item" href="{% url 'equipamento:switch' %}">Switch</a>
+            </div>
+        </div>
+    </li>
+
+      <!-- Smartphones -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'equipamento:smartphone' %}" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-mobile-alt"></i>
+            <span>Smartphones</span>
+        </a>
+    </li>
+
+      <!-- Inativos -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'equipamento:inativos' %}" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-ban"></i>
+            <span>Inativos</span>
+        </a>
+
+    </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'equipamento:desktop' %}" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-plus-square"></i>
+            <span>Cadastrar</span>
+        </a>
+
+    </li>
+
+      <hr class="sidebar-divider">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>

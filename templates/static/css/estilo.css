@@ -1,0 +1,45 @@
+.html{
+
+}
+
+.body{
+
+}
+
+.navbar{
+    background: black;
+    color: #FFFFFF;
+}
+
+.navbar-brand{
+    color: #FFFFFF;
+}
+
+#area_lateral{
+    background: black;
+    color: #4E73DF;
+}
+
+#area_principal{
+    background: #FFFFFF;
+}
+.card{
+    width: 220px;
+    height: 90px;
+    background: #4E73DF;
+    color: #FFFFFF;
+    margin: 10px;
+
+}
+
+.txt_card {
+
+}
+
+.info_card {
+
+}
+.icone-card {
+
+    color: white;
+}

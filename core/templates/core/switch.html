@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<div class="card shadow mb-4">
+            <div class="card-header">
+              <h6 class="m-0 font-weight-bold text-primary">Computadores</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Nº Patrimônio</th>
+                      <th>Tipo</th>
+                      <th>Filial</th>
+                      <th>Local</th>
+                      <th>Fabricante</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Nº Patrimônio</th>
+                      <th>Tipo</th>
+                      <th>Filial</th>
+                      <th>Local</th>
+                      <th>Fabricante</th>
+                      <th>Status</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                  {% for equipamento in equipamentos %}
+                    <tr>
+                      <td>{{ equipamento.n_invent }}</td>
+                      <td>{{ equipamento.tipo }}</td>
+                      <td>{{ equipamento.filial }}</td>
+                      <td>{{ equipamento.local }}</td>
+                      <td>{{ equipamento.fabricante }}</td>
+                      <td>{{ equipamento.status }}</td>
+                    </tr>
+                  {% endfor %}
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+{% endblock %}
